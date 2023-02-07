@@ -13,9 +13,11 @@
 		835877B62992261600BAC419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835877B42992261600BAC419 /* Main.storyboard */; };
 		835877B82992261800BAC419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835877B72992261800BAC419 /* Assets.xcassets */; };
 		835877BB2992261800BAC419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835877B92992261800BAC419 /* LaunchScreen.storyboard */; };
-		835877C62992261800BAC419 /* PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835877C52992261800BAC419 /* PlaygroundTests.swift */; };
-		835877D02992261800BAC419 /* PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835877CF2992261800BAC419 /* PlaygroundUITests.swift */; };
-		835877D22992261800BAC419 /* PlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835877D12992261800BAC419 /* PlaygroundUITestsLaunchTests.swift */; };
+		835877E02992263700BAC419 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 835877DF2992263700BAC419 /* SnapKit */; };
+		835877E52992391000BAC419 /* HotReloading in Frameworks */ = {isa = PBXBuildFile; productRef = 835877E42992391000BAC419 /* HotReloading */; };
+		835877E72992441C00BAC419 /* RulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835877E62992441C00BAC419 /* RulerView.swift */; };
+		835877EB2992472D00BAC419 /* custom-switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 835877E92992472D00BAC419 /* custom-switch.png */; };
+		835877EC2992472D00BAC419 /* uiswitch.png in Resources */ = {isa = PBXBuildFile; fileRef = 835877EA2992472D00BAC419 /* uiswitch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +47,11 @@
 		835877BA2992261800BAC419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		835877BC2992261800BAC419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		835877C12992261800BAC419 /* PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		835877C52992261800BAC419 /* PlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundTests.swift; sourceTree = "<group>"; };
 		835877CB2992261800BAC419 /* PlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		835877CF2992261800BAC419 /* PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUITests.swift; sourceTree = "<group>"; };
-		835877D12992261800BAC419 /* PlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		835877E62992441C00BAC419 /* RulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerView.swift; sourceTree = "<group>"; };
+		835877E82992469800BAC419 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		835877E92992472D00BAC419 /* custom-switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "custom-switch.png"; sourceTree = "<group>"; };
+		835877EA2992472D00BAC419 /* uiswitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uiswitch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835877E52992391000BAC419 /* HotReloading in Frameworks */,
+				835877E02992263700BAC419 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +84,10 @@
 		835877A22992261600BAC419 = {
 			isa = PBXGroup;
 			children = (
+				835877E92992472D00BAC419 /* custom-switch.png */,
+				835877EA2992472D00BAC419 /* uiswitch.png */,
+				835877E82992469800BAC419 /* README.md */,
 				835877AD2992261600BAC419 /* Playground */,
-				835877C42992261800BAC419 /* PlaygroundTests */,
-				835877CE2992261800BAC419 /* PlaygroundUITests */,
 				835877AC2992261600BAC419 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,29 +108,13 @@
 				835877AE2992261600BAC419 /* AppDelegate.swift */,
 				835877B02992261600BAC419 /* SceneDelegate.swift */,
 				835877B22992261600BAC419 /* ViewController.swift */,
+				835877E62992441C00BAC419 /* RulerView.swift */,
 				835877B42992261600BAC419 /* Main.storyboard */,
 				835877B72992261800BAC419 /* Assets.xcassets */,
 				835877B92992261800BAC419 /* LaunchScreen.storyboard */,
 				835877BC2992261800BAC419 /* Info.plist */,
 			);
 			path = Playground;
-			sourceTree = "<group>";
-		};
-		835877C42992261800BAC419 /* PlaygroundTests */ = {
-			isa = PBXGroup;
-			children = (
-				835877C52992261800BAC419 /* PlaygroundTests.swift */,
-			);
-			path = PlaygroundTests;
-			sourceTree = "<group>";
-		};
-		835877CE2992261800BAC419 /* PlaygroundUITests */ = {
-			isa = PBXGroup;
-			children = (
-				835877CF2992261800BAC419 /* PlaygroundUITests.swift */,
-				835877D12992261800BAC419 /* PlaygroundUITestsLaunchTests.swift */,
-			);
-			path = PlaygroundUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +133,10 @@
 			dependencies = (
 			);
 			name = Playground;
+			packageProductDependencies = (
+				835877DF2992263700BAC419 /* SnapKit */,
+				835877E42992391000BAC419 /* HotReloading */,
+			);
 			productName = Playground;
 			productReference = 835877AB2992261600BAC419 /* Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +209,10 @@
 				Base,
 			);
 			mainGroup = 835877A22992261600BAC419;
+			packageReferences = (
+				835877DE2992263700BAC419 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				835877E32992391000BAC419 /* XCRemoteSwiftPackageReference "HotReloading" */,
+			);
 			productRefGroup = 835877AC2992261600BAC419 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				835877BB2992261800BAC419 /* LaunchScreen.storyboard in Resources */,
+				835877EC2992472D00BAC419 /* uiswitch.png in Resources */,
 				835877B82992261800BAC419 /* Assets.xcassets in Resources */,
+				835877EB2992472D00BAC419 /* custom-switch.png in Resources */,
 				835877B62992261600BAC419 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835877E72992441C00BAC419 /* RulerView.swift in Sources */,
 				835877B32992261600BAC419 /* ViewController.swift in Sources */,
 				835877AF2992261600BAC419 /* AppDelegate.swift in Sources */,
 				835877B12992261600BAC419 /* SceneDelegate.swift in Sources */,
@@ -268,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				835877C62992261800BAC419 /* PlaygroundTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				835877D02992261800BAC419 /* PlaygroundUITests.swift in Sources */,
-				835877D22992261800BAC419 /* PlaygroundUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +448,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.chrz.Playground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -478,6 +480,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.chrz.Playground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -602,6 +608,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		835877DE2992263700BAC419 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		835877E32992391000BAC419 /* XCRemoteSwiftPackageReference "HotReloading" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnno1962/HotReloading";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		835877DF2992263700BAC419 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 835877DE2992263700BAC419 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		835877E42992391000BAC419 /* HotReloading */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 835877E32992391000BAC419 /* XCRemoteSwiftPackageReference "HotReloading" */;
+			productName = HotReloading;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 835877A32992261600BAC419 /* Project object */;
 }
